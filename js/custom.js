@@ -33,7 +33,6 @@ $(document).ready(function(){
 		});
 		$(window).scroll(function(){
 			var top = $(window).scrollTop();
-			console.log(top);
 			if(top>0){
 				$('.gotop').fadeIn(200);
 			}
