@@ -9,7 +9,7 @@ $(document).ready(function(){
 			success: function(data){
 				thisData = data.DataSet['diffgr:diffgram'].NewDataSet.CASE_SUMMARY;
 				$.each(thisData, function(i, item){
-					result = '<tr><td>' + item.CaseTime + '</td><td><span class="btn btn-xs bg-primary">' + item.CaseLocationDistrict + '</span></td><td><a href="https://www.google.com.tw/maps/place/' + item.CaseLocationDescription + '" target="_blank";><span class="glyphicon glyphicon-map-marker"></span> ' + item.CaseLocationDescription + '</a></td><td>' + item.CaseDescription + '</td></tr>';
+					result = '<tr><td>' + item.CaseTime + '</td><td><span class="btn btn-xs bg-primary">' + item.CaseLocationDistrict + '</span></td><td><a href="https://www.google.com.tw/maps/place/' + item.CaseLocationDescription + '" target="_blank";><span class="glyphicon glyphicon-map-marker"></span></a></td><td>' + item.CaseDescription + '</td></tr>';
 					allArea = '全區最新動態';
 					if($('#js-select').val() === item.CaseLocationDistrict) {
 						$('#js-tbody').append(result);
@@ -23,7 +23,7 @@ $(document).ready(function(){
 			}
 		});
 		var jsContent = $('#js-content').offset().top;
-		$('html, body').animate({
+		$('html, body').delay(650).animate({
 			scrollTop: jsContent - 30
 		}, 350);
 		$('.gotop').click(function(){
