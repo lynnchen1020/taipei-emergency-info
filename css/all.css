@@ -6729,11 +6729,17 @@ header {
   text-align: center;
 }
 .form h1 {
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: bold;
   color: #eee;
 }
 .form p {
+  font-size: 16px;
   color: #eee;
+}
+
+.select {
+  z-index: 9999;
 }
 
 .select-style {
@@ -6746,10 +6752,20 @@ header {
 
 .content {
   display: none;
+  position: relative;
+}
+
+#map {
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
 }
 
 .content-table {
   margin: 0 auto;
+  height: 100%;
+  padding-top: 80px;
   text-align: left;
 }
 .content-table th {
@@ -6830,9 +6846,14 @@ footer {
     height: 300px;
     margin-top: -150px;
     margin-left: -300px;
+    z-index: 9999;
   }
   .form h1 {
-    font-size: 32px;
+    font-size: 50px;
+  }
+  .form p {
+    font-size: 25px;
+    font-weight: bold;
   }
 
   th {
@@ -6847,12 +6868,30 @@ footer {
     vertical-align: middle;
   }
 
+  .content {
+    position: relative;
+    height: 100%;
+  }
+
+  #map {
+    max-width: 800px;
+    min-height: 600px;
+  }
+
   .content-table {
     width: 85%;
+    padding-top: 80px;
+  }
+
+  .table {
+    margin-bottom: 60px;
   }
 
   footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    height: auto;
     min-width: 320px;
     padding: 20px;
     line-height: 5px;

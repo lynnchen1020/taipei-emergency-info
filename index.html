@@ -48,8 +48,9 @@
 			</div>
 		</header>
 		<div class="content" id="js-content">
-			<p class="contact-info bg-danger">防災災情及相關諮詢電話：87863119 分機 8900~8907 </p>
 			<div class="content-table">
+			<div id="map"></div>
+			<p class="contact-info bg-danger" id="contact-info">防災災情及相關諮詢電話：87863119 分機 8900~8907 </p>
 				<table class="table table-striped">
 					<thead>	
 						<label></label>
@@ -62,18 +63,19 @@
 					</tbody>
 				</table>
 			</div>
-		<footer>
-			<span class="footer-title">台北最新災情資訊</span>
-			<ul class="footer-nav">
-				<li><a href="https://taipeicity.github.io/eoc_119/" target="_blank">資料來源：臺北市政府消防局</a></li>
-				<li></li>
-			</ul>
-		</footer>
-		<span class="glyphicon glyphicon-circle-arrow-up gotop" aria-hidden="true"></span>
+			<footer>
+				<span class="footer-title">台北最新災情資訊</span>
+				<ul class="footer-nav">
+					<li><a href="https://taipeicity.github.io/eoc_119/" target="_blank">資料來源：臺北市政府消防局</a></li>
+				</ul>
+			</footer>
+			<span class="glyphicon glyphicon-circle-arrow-up gotop" aria-hidden="true"></span>
       	</div>
 	</div>
-</body>
 <script rel="javascript" src="js/jquery-3.1.0.min.js"></script>
 <script rel="javascript" src="js/bootstrap.js"></script>
 <script rel="javascript" src="js/custom.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASGAMHaWutvFnNzkDlqzHFSqbxLPyxAmA">
+</script>
+</body>
 </html>
