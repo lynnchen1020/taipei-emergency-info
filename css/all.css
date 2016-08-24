@@ -6883,13 +6883,7 @@ footer {
     padding-top: 80px;
   }
 
-  .table {
-    margin-bottom: 60px;
-  }
-
   footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     height: auto;
     min-width: 320px;
